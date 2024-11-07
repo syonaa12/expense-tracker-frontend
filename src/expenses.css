@@ -1,0 +1,125 @@
+/* expenses.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns the form and other elements horizontally */
+    justify-content: center; /* Center-aligns the elements vertically */
+    height: 100vh; /* Use viewport height to center vertically in full page */
+    padding: 15px;
+}
+h2, h3 {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff4d4d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap */
+    background-color: #fff;
+    padding: 12px; /* Reduced padding */
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 1400px;
+
+}
+
+
+input[type="text"],
+input[type="number"] {
+    padding: 6px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #ff4d4d;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc0000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px; /* Consistent padding for list items */
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li span {
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+li:hover {
+    background-color: #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    form {
+        padding: 8px;
+    }
+
+    li {
+        padding: 8px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    button[type="submit"] {
+        font-size: 12px;
+    }
+}
+
+.pie-chart-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Add some spacing around the chart */
+    height: 300px; /* Set a specific height if necessary */
+}
